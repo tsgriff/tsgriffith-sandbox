@@ -12,3 +12,136 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.content-wrapper {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0 25px 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  min-height: 50px;
+  height: auto;
+  background: #F5F5F5;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0,0,0,0.2) 0 0 10px;
+}
+
+.nav-item {
+  font-family: "Lato", sans-serif;  
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Footer */
+
+.blog-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;;
+  border-top: 1px solid #e4e4e4;
+  height: 50px;
+  width: 100%;
+  color: #222222;
+  font-size: 18px;
+}
+
+.blog-footer-text {
+  font-family: "Lato", sans-serif;  
+  font-size: 14px;
+}
+
+.submit-button {
+  margin-left: 5px;
+}
+
+#budget-calculator-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#budget-chart-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-family: "Lato", sans-serif;
+  color: #434E5A;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-family: "Lato", sans-serif;
+  color: #434E5A;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 25px;  
+}
+
+.segment-title {
+  font-family: "Lato", sans-serif;
+  color: #434E5A;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: underline;  
+}
+
+.segment-subtitle {
+  font-family: "Lato", sans-serif;
+  color: #434E5A;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.budget-input-contain {
+  text-align: center;
+}
+
+
+/* Responsiveness/media queries */
+
+@media (min-width: 701px) {
+  .graph-mobile {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .graph-desktop {
+    display: none;
+  }
+  #budget-chart-container {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 999px) {
+  .desktop-navbar {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .mobile-navbar {
+    display: none;
+  }
+}
