@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <section className="blog-footer">
         <div className="blog-footer-text">
-          &copy; {new Date().getFullYear()} | Financial Programmer
+          &copy; {new Date().getFullYear()}
         </div>
       </section>
     );

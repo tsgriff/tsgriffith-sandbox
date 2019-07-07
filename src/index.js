@@ -5,6 +5,8 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 import BudgetCalculator from './containers/budget-calculator';
+import InvestmentPortal from './containers/investment-portal';
+
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 
@@ -14,6 +16,7 @@ ReactDOM.render(
           <Route component={ Nav }/>
           <Switch>
             <Route exact path="/" component={ BudgetCalculator } />
+            <Route exact path="/investments" component={ InvestmentPortal } />
           </Switch>
             <Route component={ Footer }/>
       </div>

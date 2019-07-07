@@ -29,7 +29,6 @@ code {
   height: auto;
   background: #F5F5F5;
   align-items: center;
-  justify-content: center;
   box-shadow: rgba(0,0,0,0.2) 0 0 10px;
 }
 
@@ -119,6 +118,20 @@ code {
   text-align: center;
 }
 
+.recharts-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-wrapper {
+  padding: 50px 0;
+}
+
+.centered-select-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 /* Responsiveness/media queries */
 
