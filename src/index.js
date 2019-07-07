@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-import BudgetCalculator from './containers/budget-calculator';
-import InvestmentPortal from './containers/investment-portal';
+import BudgetCalculator from './containers/Finance/budget-calculator';
+import InvestmentPortal from './containers/Finance/investment-portal';
 
 import Footer from './components/Footer';
 import Nav from './components/Nav';
@@ -13,12 +13,12 @@ import Nav from './components/Nav';
 ReactDOM.render(
     <BrowserRouter>
       <div>
-          <Route component={ Nav }/>
+        <Route component={ Nav }/>
           <Switch>
             <Route path="/investments" component={ InvestmentPortal } />
             <Route exact path="/" component={ BudgetCalculator } />
           </Switch>
-            <Route component={ Footer }/>
+        <Route component={ Footer }/>
       </div>
     </BrowserRouter>,
   document.getElementById('root'));

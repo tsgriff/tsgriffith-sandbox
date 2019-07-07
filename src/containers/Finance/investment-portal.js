@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Sectors from '../components/Sectors'
-import Stocks from '../components/Stocks'
+import Sectors from '../../components/Finance/Sectors'
+import Stocks from '../../components/Finance/Stocks'
 
 class InvestmentPortal extends Component {
 
