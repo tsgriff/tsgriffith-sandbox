@@ -69,7 +69,7 @@ render() {
     return (
       <section className="page-wrapper">
         <div className="section-content">
-          <p className="section-title">Investment Portal</p>
+          <p className="section-title">Investing</p>
           <div>
             <p className="section-subtitle">Yearly Market Movements</p>
             <div className="centered-select-container">
