@@ -16,7 +16,7 @@ ReactDOM.render(
           <Route component={ Nav }/>
           <Switch>
             <Route exact path="/" component={ BudgetCalculator } />
-            <Route exact path="/investments" component={ InvestmentPortal } />
+            <Route path="/investments" component={ InvestmentPortal } />
           </Switch>
             <Route component={ Footer }/>
       </div>
