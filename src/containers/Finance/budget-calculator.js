@@ -59,6 +59,7 @@ class BudgetCalculator extends Component {
              value={this.state.incomeAmount}
              onChange={this.handleIncomeInput}
              type="number"
+             placeholder="Enter income amount"
            />
            <button onClick={this.renderIncomeInfo}>Submit</button>
          </div>

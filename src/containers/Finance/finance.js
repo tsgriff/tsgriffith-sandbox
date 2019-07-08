@@ -5,7 +5,7 @@ import InvestmentPortal from './investment-portal';
 class Finance extends Component {
   render() {
     return (
-      <section>
+      <section style={{padding: '50px 0'}}>
         <BudgetCalculator />
         <InvestmentPortal />
       </section>
