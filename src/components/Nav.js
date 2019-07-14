@@ -7,7 +7,7 @@ class Nav extends Component {
     return (
       <nav className="navbar">
         <a className="nav-item" href="https://tsgriffith.com">Home</a>
-        <a className="nav-item" href="https://tsgriffith.com/blog">Blog</a>
+        <a className="nav-item" href="http://blog.tsgriffith.com">Blog</a>
       </nav>
     );
   }
