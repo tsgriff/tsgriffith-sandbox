@@ -39,7 +39,7 @@ class Weather extends Component {
 
     handleUserLocation() {
       // Current weather //
-      fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${this.state.userLatitude}&lon=${this.state.userLongitude}&units=imperial&APPID=${process.env.openWeatherApiKey}`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${this.state.userLatitude}&lon=${this.state.userLongitude}&units=imperial&APPID=${process.env.openWeatherApiKey}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -52,7 +52,7 @@ class Weather extends Component {
         }
       )
       // Forecast //
-      fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${this.state.userLatitude}&lon=${this.state.userLongitude}&units=imperial&APPID=${process.env.openWeatherApiKey}`)
+      fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${this.state.userLatitude}&lon=${this.state.userLongitude}&units=imperial&APPID=${process.env.openWeatherApiKey}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -68,7 +68,7 @@ class Weather extends Component {
 
     handleSearch() {
       // Current weather //
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.city},us&units=imperial&APPID=${process.env.openWeatherApiKey}`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.city},us&units=imperial&APPID=${process.env.openWeatherApiKey}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -81,7 +81,7 @@ class Weather extends Component {
         }
       )
       // Forecast //
-      fetch(`http://api.openweathermap.org/data/2.5/forecast/?q=${this.state.city},us&units=imperial&APPID=87684fe1b247f45b9f9f87beaacd0d87`)
+      fetch(`https://api.openweathermap.org/data/2.5/forecast/?q=${this.state.city},us&units=imperial&APPID=87684fe1b247f45b9f9f87beaacd0d87`)
       .then(res => res.json())
       .then(
         (result) => {
