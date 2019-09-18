@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import DisplayWeather from './display-weather';
 import ForecastOverview from './forecast-overview';
-import {openWeatherApiKey} from '../../config';
 
 class Weather extends Component {
   constructor(props) {
