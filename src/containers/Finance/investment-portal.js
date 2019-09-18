@@ -13,7 +13,7 @@ class InvestmentPortal extends Component {
   }
 
 componentDidMount() {
-  fetch(`https://www.alphavantage.co/query?function=SECTOR&apikey=${process.env.alphaVantageApiKey}`)
+  fetch(`https://www.alphavantage.co/query?function=SECTOR&apikey=${process.env.openWeatherApiKey}`)
   .then(res => res.json())
   .then(
     (result) => {
@@ -94,23 +94,6 @@ render() {
             }
           </div>
         </div>
-        {/* <div className="reference-links">
-          <p className="reference-links-title">Helpful Resources</p>
-          <a href="http://share.robinhood.com/taylorg14" target="_blank" rel="noopener noreferrer">
-            <div className="sidebar-card">
-              <img src={robinhoodPhoto} />
-              <p className="reference-links-subtitle">
-                Robinhood
-            </p>
-              <p className="reference-links-body">
-                Invest using this popular, no-commission trading app.
-              </p>
-              <p className="reference-links-body">
-                Click on this card to sign up and receive a <strong>free share of stock</strong>.
-              </p>
-            </div>
-          </a>
-        </div> */}
       </section>
     )
   }
