@@ -14,7 +14,7 @@ class InvestmentPortal extends Component {
   }
 
 componentDidMount() {
-  fetch(`https://www.alphavantage.co/query?function=SECTOR&apikey=${alphaVantageApiKey}`)
+  fetch(`https://www.alphavantage.co/query?function=SECTOR&apikey=7GHKRJZS1BL53OUQ`)
   .then(res => res.json())
   .then(
     (result) => {
@@ -39,7 +39,7 @@ componentDidMount() {
     }
   )
 
-  fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=VTSMX&apikey=${alphaVantageApiKey}`)
+  fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=VTSMX&apikey=7GHKRJZS1BL53OUQ`)
   .then(res => res.json())
   .then(
     (result) => {
