@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Sectors from '../../components/Finance/Sectors'
 import Stocks from '../../components/Finance/Stocks'
+import {alphaVantageApiKey} from '../../config';
 
 class InvestmentPortal extends Component {
 
@@ -13,7 +14,7 @@ class InvestmentPortal extends Component {
   }
 
 componentDidMount() {
-  fetch(`https://www.alphavantage.co/query?function=SECTOR&apikey=${process.env.openWeatherApiKey}`)
+  fetch(`https://www.alphavantage.co/query?function=SECTOR&apikey=${alphaVantageApiKey}`)
   .then(res => res.json())
   .then(
     (result) => {
@@ -38,7 +39,7 @@ componentDidMount() {
     }
   )
 
-  fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=VTSMX&apikey=${process.env.alphaVantageApiKey}`)
+  fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=VTSMX&apikey=${alphaVantageApiKey}`)
   .then(res => res.json())
   .then(
     (result) => {
