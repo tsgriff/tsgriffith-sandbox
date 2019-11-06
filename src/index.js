@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import Finance from './containers/Finance/finance';
 import ToDo from './containers/ToDo/to-do';
 import Weather from './containers/Weather/weather';
+import SentimentAnalysis from './containers/SentimentAnalysis/sentiment-analysis';
 
 import Footer from './components/Footer';
 import Nav from './components/Nav';
@@ -19,6 +20,7 @@ ReactDOM.render(
             <Route exact path="/" component={ Finance } />
             <Route exact path="/to-do" component={ ToDo } />
             <Route exact path="/weather" component={ Weather } />
+            <Route exact path="/sentiment-analysis" component={ SentimentAnalysis } />
           </Switch>
         <Route component={ Footer }/>
       </div>

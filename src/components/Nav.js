@@ -9,6 +9,7 @@ class Nav extends Component {
         <a className="nav-item" href="https://tsgriffith.com">Home</a>
         <Link className="nav-item" to="/">Finance</Link>
         <Link className="nav-item" to="/weather">Weather</Link>
+        <Link className="nav-item" to="/sentiment-analysis">Sentiment Analysis</Link>
       </nav>
     );
   }
